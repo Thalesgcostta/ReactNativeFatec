@@ -19,7 +19,7 @@ export default function Facebook(){
           <TouchableOpacity style={styles.button}> 
             <Text style={styles.buttonText}> Conecte-se </Text>
           </TouchableOpacity>
-          <TouchableOpacity styles={styles.link}> 
+          <TouchableOpacity style={styles.link}> 
             <Text style={styles.linkText}> Esqueceu a senha? </Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.link}> 
@@ -28,14 +28,13 @@ export default function Facebook(){
         </View>
         <View style={styles.footer}>
           <View style={styles.divider}>
-            <View style={styles.dividerLine}> 
-              <Text style={styles.footerText}> OU </Text>
-              <View style={styles.dividerLine}/>
-            </View>
-            <TouchableOpacity style={[styles.button, styles.buttonRegister]}>
-            <Text style={[styles.buttonText, styles.buttonRegisterText]}> Criar uma nova conta </Text>
-            </TouchableOpacity>
+            <View style={styles.dividerLine}/> 
+            <Text style={styles.footerText}> OU </Text>
+            <View style={styles.dividerLine}/>
           </View>
+          <TouchableOpacity style={[styles.button, styles.buttonRegister]}>
+            <Text style={[styles.buttonText, styles.buttonRegisterText]}> Criar uma nova conta </Text>
+          </TouchableOpacity>
         </View>
       </SafeAreaView>
     </>
@@ -71,15 +70,27 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 3,
     borderBottomRightRadius: 3
   },
-  link:{
+  button: {
+    height: 42,
+    borderRadius: 6,
+    backgroundColor: "#1977f3",
+    justifyContent: "center",
+    marginVertical: 15
+  },
+  buttonText: {
+    color: "#b4cafb",
+    textAlign: "center",
+    fontSize: 16
+  },
+  link: {
     paddingVertical: 8
   },
-  linkText:{
+  linkText: {
     color: "#1c6ede",
     textAlign: "center",
     fontSize: 16,
     fontWeight: "500"
-},
+  },
   footer: {
     alignItems: "center",
     padding: 22,
@@ -103,9 +114,8 @@ const styles = StyleSheet.create({
   buttonRegister: {
     width: "100%",
     backgroundColor: "#e7f3ff"
-    },
-    buttonRegisterText:{
-      color: "#1077f7"
-    }
-
+  },
+  buttonRegisterText: {
+    color: "#1077f7"
+  }
 })

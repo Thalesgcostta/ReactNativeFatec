@@ -4,7 +4,8 @@ import Light from './components/light/Light'
 import Login from './components/login-page/Login'
 import Facebook from './components/login-page/Facebook.js'
 import RegisterForm from './components/register-form/RegisterForm'
+import Instagram from './components/instagram-feed/instagram'
 export default function App(){
 
-  return <RegisterForm/>
+  return <Instagram/>
 }

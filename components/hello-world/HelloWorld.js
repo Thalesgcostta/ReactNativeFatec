@@ -1,20 +1,21 @@
+
 import {View, Text} from 'react-native'
+
 export default function HelloWorld(){
-  return(
+  return (
     <View style={{
-      alignItems: "center",
-      justifyContent: "center",
       flex: 1,
-      backgroundColor: "#ADD8E6"
+      justifyContent: "center",
+      alignItems: "center",
+      backgroundColor: "green"
     }}>
       <Text style={{
         fontSize: 30,
         fontWeight: "bold",
-        color: "#6A5ACD",
+        color: "red",
         textTransform: "uppercase"
       }}>
-        {'\n'}
-        Hello World !!!!!!
+        Hello World !!!!!
       </Text>
     </View>
   )
